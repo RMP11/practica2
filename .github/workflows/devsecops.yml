@@ -73,6 +73,15 @@ jobs:
         cd frontend
         npm ci
         npm test
+
+    # =========================
+    # 4.1 Linter
+    # =========================
+    - name: Run linter
+      run: |
+        cd frontend
+        npm run lint
+
     # =========================
     # 5. SAST – Semgrep
     # =========================
